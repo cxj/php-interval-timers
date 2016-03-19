@@ -1,0 +1,20 @@
+{
+    "name": "cxj/php-interval-timers",
+    "description": "Manage elapsed one or more elapsed time timers",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Johnson",
+            "email": "cxjohnson@gmail.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "Cxj\\": "src/"
+        }
+    },
+
+    "require": {}
+}
