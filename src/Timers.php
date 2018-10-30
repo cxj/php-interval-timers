@@ -1,6 +1,7 @@
 <?php
 /**
  * Simple interval timers.
+ * @package cxj/php-interval-timers
  */
 
 namespace Cxj;
