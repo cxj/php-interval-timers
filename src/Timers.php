@@ -1,6 +1,6 @@
 <?php
 /**
- * @file Timers.php
+ * Simple interval timers.
  */
 
 namespace Cxj;
@@ -26,17 +26,23 @@ class Timers
      */
     protected $timerList = array();
 
+    /**
+     * @var array - list of accumulated time for timers.
+     */
     protected $accumulators = array();
 
+    /**
+     * Constructor.
+     */
     public function __construct()
     {
     }
 
     /**
-     * @param $name
-     *
      * Starts a new timer (if name does not exist), otherwise restarts a
      * previously paused timer.
+     *
+     * @param $name
      *
      * @return bool
      */
@@ -53,6 +59,7 @@ class Timers
     }
 
     /**
+     * Stop a running timer.
      * @param $name
      *
      * @return bool|mixed - false on failure, floating seconds on success.
@@ -66,6 +73,11 @@ class Timers
         return $this->accumulators[$name];
     }
 
+    /**
+     * Return current value of a timer.
+     * @param $name - name of the timer.
+     *
+     */
     public function read($name)
     {
         if (!isset($this->timerList[$name])) return false;
@@ -74,7 +86,8 @@ class Timers
     }
 
     /**
-     * @param $name
+     * Reset an existing timer to zero.
+     * @param $name - name of the timer.
      *
      * @return bool - true on success, false if no such named timer existed.
      */
