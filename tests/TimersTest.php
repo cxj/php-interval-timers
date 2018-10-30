@@ -9,7 +9,7 @@ namespace Cxj;
  * Class TimersTest
  * @mixin \Cxj\Timers
  */
-class TimersTest extends \PHPUnit_Framework_TestCase
+class TimersTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var \Cxj\Timers
