@@ -4,7 +4,4 @@
             <directory>./tests</directory>
         </testsuite>
     </testsuites>
-    <php>
-        <env name="APP_HOME" value="./tests"/>
-    </php>
 </phpunit>
