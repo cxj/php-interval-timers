@@ -16,5 +16,11 @@
         }
     },
 
-    "require": {}
+    "require": {
+        "php":      ">=5.1"
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    }
 }
