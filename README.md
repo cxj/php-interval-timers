@@ -15,7 +15,7 @@ This package requires PHP 5.1 or later. We recommend using the latest available 
 
 ## Quality
 
-[![Build Status](https://travis-ci.org/cxj/php-interval-timers.png?branch=1.x)](https://travis-ci.org/cxj/php-intervals-timers)
+[![Build Status](https://travis-ci.org/cxj/php-interval-timers.png?branch=1.x)](https://travis-ci.org/cxj/php-interval-timers)
 
 ## Example Usage
 
