@@ -21,9 +21,15 @@ This package requires PHP 5.1 or later. We recommend using the latest available 
 
 ```php
 <?php
-    $timer = 'mytimer3';
-    $this->timer->start($timer);
-    usleep(1000);
-    $r1 = $this->timer->read($timer);
-    echo "$r1 microseconds have past since timer was started" . PHP_EOL;
+include "vendor/autoload.php";
+
+$timer = new Cxj\Timers;
+$name  = "sample timer";
+
+$timer->start($name);
+usleep(1000);
+$r1 = $timer->read($name);
+
+echo "$r1 seconds have passed since timer was started" . PHP_EOL;
+
 ```
