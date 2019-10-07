@@ -61,13 +61,16 @@ class Timers
 
     /**
      * Stop a running timer.
+     *
      * @param $name
      *
      * @return bool|mixed - false on failure, floating seconds on success.
      */
     public function stop($name)
     {
-        if (!isset($this->timerList[$name])) return false;
+        if (!isset($this->timerList[$name])) {
+            return false;
+        }
 
         $this->accumulators[$name] = microtime(true) - $this->timerList[$name];
 
@@ -76,28 +79,34 @@ class Timers
 
     /**
      * Return current value of a timer.
+     *
      * @param $name - name of the timer.
      *
      */
     public function read($name)
     {
-        if (!isset($this->timerList[$name])) return false;
+        if (!isset($this->timerList[$name])) {
+            return false;
+        }
 
         return microtime(true) - $this->timerList[$name];
     }
 
     /**
      * Reset an existing timer to zero.
+     *
      * @param $name - name of the timer.
      *
      * @return bool - true on success, false if no such named timer existed.
      */
     public function reset($name)
     {
-        if (!isset($this->timerList[$name])) return false;
+        if (!isset($this->timerList[$name])) {
+            return false;
+        }
 
         $this->accumulators[$name] = 0.0;
-        $this->timerList[$name] = 0.0;
+        $this->timerList[$name]    = 0.0;
 
         return true;
     }
