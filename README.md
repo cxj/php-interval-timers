@@ -4,9 +4,10 @@ A class to manage one or more elapsed-time timers, for such things as performanc
 ## Installation and Autoloading
 
 This package is installable and PSR-4 autoloadable via Composer as
-[cxj/php-interval-timers][].
+[cxj/php-interval-timers](https://packagist.org/packages/cxj/php-interval-timers).
 
-Alternatively, [download a release][], or clone this repository, then map the
+Alternatively, [download a release](https://github.com/cxj/php-interval-timers/releases), 
+or clone this repository, then map the
 `Cxj\` namespace to the package `src/` directory.
 
 ## Dependencies
